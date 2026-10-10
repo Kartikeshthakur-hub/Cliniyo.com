@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Cliniyo — The Clinic OS for Modern Clinics in Nepal</title>
+<meta name="description" content="Cliniyo connects patient records, appointments, queue, consultation, treatment, billing, staff and follow-ups in one Clinic OS. Built in Nepal for dental, skin, hair and aesthetic, and multi-specialty clinics.">
+<link rel="canonical" href="https://cliniyo.com/">
+<meta name="theme-color" content="#206DF9">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cliniyo">
+<meta property="og:title" content="Cliniyo — Run your entire clinic from one dashboard">
+<meta property="og:description" content="The Operating System for Modern Clinics. Patients, appointments, billing, staff and follow-ups, connected in one place.">
+<meta property="og:url" content="https://cliniyo.com/">
+<meta property="og:image" content="https://cliniyo.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cliniyo — Run your entire clinic from one dashboard">
+<meta name="twitter:description" content="The Operating System for Modern Clinics. Built in Nepal.">
+<meta name="twitter:image" content="https://cliniyo.com/assets/og-image.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Cliniyo","applicationCategory":"BusinessApplication","description":"Clinic operating system for patient management, appointments, billing, staff and follow-ups.","offers":[{"@type":"Offer","name":"Starter","price":"9990","priceCurrency":"NPR"},{"@type":"Offer","name":"Growth","price":"14990","priceCurrency":"NPR"},{"@type":"Offer","name":"Scale","price":"24990","priceCurrency":"NPR"}]}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="logo" viewBox="79 74 767 805"><path fill="currentColor" d="M400 75H815Q845 75 845 105C840 185 818 255 765 312C725 362 668 378 600 382C485 390 425 415 403 480C392 515 389 560 388 620L391 830C395 760 400 690 420 620C440 550 490 505 570 495H820Q845 495 845 520C842 600 830 680 790 740C740 810 650 860 540 872H440C410 872 395 868 380 860C330 860 225 800 155 705C103 625 80 545 80 470C80 245 240 85 400 75Z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c0-3.2 2.7-5.5 6-5.5s6 2.3 6 5.5"/><circle cx="17" cy="9" r="2.4"/><path d="M17.5 13.8c2.2.3 3.8 2 3.8 4.2"/></symbol>
+<symbol id="i-userplus" viewBox="0 0 24 24"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 19.5c0-3.4 2.8-5.5 6.5-5.5s6.5 2.1 6.5 5.5M18 8v6M15 11h6"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+<symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="3"/><path d="M9 4.5h6M8.5 10h7M8.5 14h5"/></symbol>
+<symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3.5h12v17l-3-2-3 2-3-2-3 2z"/><path d="M9 8.5h6M9 12h6"/></symbol>
+<symbol id="i-badge" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><circle cx="12" cy="11" r="2.4"/><path d="M8 17c.6-1.8 2.2-2.8 4-2.8s3.4 1 4 2.8"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 004 0"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5l7 2.5v5.5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="3"/><path d="M8 10.5V8a4 4 0 018 0v2.5"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3.5" y="6" width="17" height="13" rx="3"/><path d="M3.5 10h17M16 14.5h1.5"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0113.7-5.6L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 01-13.7 5.6L4 15.5M4 20v-4.5h4.5"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 4l8 4-8 4-8-4z"/><path d="M4 12l8 4 8-4M4 16l8 4 8-4"/></symbol>
+<symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6.5h12M8 12h12M8 17.5h12"/><circle cx="4" cy="6.5" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="17.5" r="1"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1"/></symbol>
+<symbol id="i-building" viewBox="0 0 24 24"><path d="M5 20V5.5A1.5 1.5 0 016.5 4h7A1.5 1.5 0 0115 5.5V20M15 10h3.5a1.5 1.5 0 011.5 1.5V20M3.5 20h17M8.5 8h3M8.5 12h3M8.5 16h3"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 4l1.8 5.2L19 11l-5.2 1.8L12 18l-1.8-5.2L5 11l5.2-1.8z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="3"/><path d="M4 8l8 5.5L20 8"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-5.6 6.5-11a6.5 6.5 0 10-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.01"/></symbol>
+</defs></svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Cliniyo home"><svg aria-hidden="true"><use href="#logo"/></svg><span>Cliniyo</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#product">Product</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#retention">Retention</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#demo">Book a Demo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- 2. HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Clinic OS · Built in Nepal</p>
+      <h1>Run your entire clinic from <span>one dashboard.</span></h1>
+      <p class="sub">Cliniyo connects patients, appointments, the waiting room, consultations, treatment, billing, staff and follow-ups, so every visit stays in flow and owners can see how the clinic is really doing.</p>
+      <div class="cta">
+        <a class="btn btn-primary btn-lg" href="#demo">Book a Demo <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-secondary btn-lg" href="#product">Explore Features</a>
+      </div>
+      <p class="fine">For dental, dermatology and skin, hair and aesthetic, general and small multi-specialty clinics.</p>
+    </div>
+
+    <div class="hero-vis">
+      <p class="sample" style="margin:0 0 10px">Illustrative interface with sample data.</p>
+      <div class="app" role="img" aria-label="Sample queue screen showing three patients waiting, with the doctor, and at billing">
+        <div class="app-bar"><h4>Queue · Dental</h4><span class="chip-btn"><svg class="ic" style="width:14px;height:14px" aria-hidden="true"><use href="#i-plus"/></svg>Check in</span></div>
+        <div class="stats"><div><b>6</b><span>Waiting</span></div><div><b>9 min</b><span>Avg wait</span></div><div><b>38</b><span>Seen today</span></div></div>
+        <ul class="rows">
+          <li><span class="tok">#14</span><span class="who">Sita Rai<small>Cleaning</small></span><span class="badge b-wait">Waiting 6m</span></li>
+          <li><span class="tok">#13</span><span class="who">Ram Shrestha<small>Root canal</small></span><span class="badge b-doc">With dentist</span></li>
+          <li><span class="tok">#12</span><span class="who">Anita K.C.<small>Check-up</small></span><span class="badge b-bill">At billing</span></li>
+        </ul>
+      </div>
+      <div class="float f1"><strong>Token 14 is next.</strong><small>Dr. Adhikari is ready.</small></div>
+      <div class="float f2"><strong>5 follow-ups due today</strong><small>Messages are ready to review.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PROBLEMS -->
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">The problem</p>
+      <h2>Most clinics run on a patchwork.</h2>
+      <p class="lede">A paper register at the front desk, a spreadsheet for fees, a chat group for the queue, another tool for billing. Each one works alone. Together they cost hours and make every patient wait a little longer.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card prob"><span class="ic-box"><svg class="ic"><use href="#i-clip"/></svg></span><h3>Records you can’t find</h3><p>Visit history sits in registers and phone galleries. Finding what happened last time means searching.</p><p class="cost">Slower consultations, repeated questions.</p></article>
+      <article class="card prob"><span class="ic-box"><svg class="ic"><use href="#i-list"/></svg></span><h3>A queue nobody can see</h3><p>Walk-ins, booked patients and cancellations are juggled by memory or in a chat group.</p><p class="cost">Longer waits, a stressed front desk.</p></article>
+      <article class="card prob"><span class="ic-box"><svg class="ic"><use href="#i-wallet"/></svg></span><h3>Fees tracked by hand</h3><p>Partial payments and pending balances live in notebooks and spreadsheets.</p><p class="cost">Money owed and never collected.</p></article>
+      <article class="card prob"><span class="ic-box"><svg class="ic"><use href="#i-repeat"/></svg></span><h3>Follow-ups left to memory</h3><p>The patient who should return in three weeks is remembered only if someone remembers.</p><p class="cost">Unfinished treatment, lost repeat visits.</p></article>
+      <article class="card prob"><span class="ic-box"><svg class="ic"><use href="#i-badge"/></svg></span><h3>Staff and commissions by hand</h3><p>Shifts, salaries, commissions and referral payouts are calculated at month end.</p><p class="cost">Disputes and hours of admin.</p></article>
+      <article class="card prob"><span class="ic-box"><svg class="ic"><use href="#i-eye"/></svg></span><h3>No clear view of the business</h3><p>Owners ask for numbers and get them days later, one branch at a time.</p><p class="cost">Decisions made on guesswork.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SOLUTION / WORKFLOW -->
+<section class="sec dark" id="workflow">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">The Cliniyo solution</p>
+      <h2>Not clinic software. A Clinic OS.</h2>
+      <p class="lede">One patient record, one visit flow, one source of truth. A patient checks in, waits, is seen, pays and books the next visit, and everyone sees the same picture without asking.</p>
+    </div>
+    <div class="rail" aria-label="Clinic workflow in order">
+      <b class="g"><span>Patient Registration</span><i aria-hidden="true">→</i></b><b class="g"><span>Appointment</span><i aria-hidden="true">→</i></b><b class="g"><span>Waiting / Queue</span><i aria-hidden="true">→</i></b><b class="g"><span>Session</span><i aria-hidden="true">→</i></b><b class="g"><span>Consultation</span><i aria-hidden="true">→</i></b><b class="g"><span>Treatment</span><i aria-hidden="true">→</i></b><b class="g"><span>Billing</span><i aria-hidden="true">→</i></b><b class="g"><span>Payment</span><i aria-hidden="true">→</i></b><span>Follow-Up</span>
+    </div>
+    <ol class="flow">
+      <li><h3>Patient Registration</h3><p>Create the patient once. Contact details, blood group and relevant information stay on one profile.</p></li>
+      <li><h3>Appointment</h3><p>Book against a doctor’s schedule, or add a walk-in. Cancellations and no-shows are recorded.</p></li>
+      <li><h3>Waiting / Queue</h3><p>Check the patient in and give them a place in the queue everyone can see.</p></li>
+      <li><h3>Session</h3><p>The visit itself, coordinated between reception, the doctor and the other staff involved.</p></li>
+      <li><h3>Consultation</h3><p>The doctor records notes, prescriptions and investigations on the patient’s record.</p></li>
+      <li><h3>Treatment</h3><p>Plan and record procedures, including treatments that span several visits.</p></li>
+      <li><h3>Billing</h3><p>Charges come from the service catalogue and become an invoice.</p></li>
+      <li><h3>Payment</h3><p>Record full or partial payments. Outstanding balances stay visible.</p></li>
+      <li><h3>Follow-Up</h3><p>Record the return date, see it when it’s due, and track whether the patient comes back.</p></li>
+    </ol>
+    <div class="notes">
+      <div class="note"><b>A session is not just a consultation.</b><p>It’s the whole coordinated visit. The consultation is one part of it, alongside reception and any other staff involved.</p></div>
+      <div class="note"><b>The service catalogue is separate.</b><p>It holds your configured services, prices and durations. Treatment records what was actually done for the patient.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. MODULES -->
+<section class="sec" id="product">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Product</p>
+      <h2>Eight modules, one connected system.</h2>
+      <p class="lede">Start with the everyday clinic work. Each module shares the same patient record, so nothing is typed twice.</p>
+    </div>
+    <div class="grid g4">
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-users"/></svg></span><h3>Patient Management</h3><p class="benefit">Every patient’s full story in one place.</p><ul><li>Profiles, contact details and blood group</li><li>Visits, consultations, prescriptions and investigations</li><li>Treatment history, invoices and balances</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-cal"/></svg></span><h3>Appointments &amp; Queue</h3><p class="benefit">A calmer front desk and shorter waits.</p><ul><li>Calendar views and doctor schedules</li><li>Walk-ins, waiting lists, cancellations, no-shows</li><li>Appointment reminders and supported booking channels</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-clip"/></svg></span><h3>Consultation &amp; Treatment</h3><p class="benefit">Clinical work documented where it happens.</p><ul><li>Consultation notes, prescriptions, investigations</li><li>Treatment plans and procedures</li><li>Multiple visits and specialty workflows</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-receipt"/></svg></span><h3>Billing &amp; Finance</h3><p class="benefit">Know what’s earned, spent and still owed.</p><ul><li>Service catalogue, invoices and payments</li><li>Partial payments and outstanding balances</li><li>Expenses, revenue and profit-and-loss</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-badge"/></svg></span><h3>Staff &amp; Branches</h3><p class="benefit">Roles, pay and branches without spreadsheets.</p><ul><li>Role-based permissions and staff profiles</li><li>Branch allocation and transfers</li><li>Attendance, shifts and payroll</li><li>Fixed, commission-only or hybrid pay; referral commissions</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-box"/></svg></span><h3>Inventory</h3><p class="benefit">Stop running out mid-treatment.</p><ul><li>Stock tracking and low-stock alerts</li><li>Service catalogue and pricing</li><li>Usage linked to treatment or billing</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-repeat"/></svg></span><h3>Follow-Up &amp; Retention</h3><p class="benefit">Bring patients back, on purpose.</p><ul><li>Rebooking and missed-appointment follow-ups</li><li>Treatment, package and membership expiry reminders</li><li>Templates, timing and staff task lists</li></ul></article>
+      <article class="card mod"><span class="ic-box"><svg class="ic"><use href="#i-chart"/></svg></span><h3>Analytics</h3><p class="benefit">Numbers you can act on.</p><ul><li>Revenue, expenses and outstanding balances</li><li>No-show rates and returning patients</li><li>Follow-up completion; staff and branch performance</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PRODUCT PREVIEWS -->
+<section class="sec alt" id="preview">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Inside the product</p>
+      <h2>See the screens your team will use every day.</h2>
+      <p class="lede">Patient lists, calendars, queues, bills and follow-ups, designed for fewer clicks and readable density.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Product screens" data-tabs="pv">
+      <button class="tab" role="tab" id="pv-t1" aria-controls="pv-p1" aria-selected="true">Patient profile</button>
+      <button class="tab" role="tab" id="pv-t2" aria-controls="pv-p2" aria-selected="false">Appointments</button>
+      <button class="tab" role="tab" id="pv-t3" aria-controls="pv-p3" aria-selected="false">Queue</button>
+      <button class="tab" role="tab" id="pv-t4" aria-controls="pv-p4" aria-selected="false">Billing &amp; finance</button>
+      <button class="tab" role="tab" id="pv-t5" aria-controls="pv-p5" aria-selected="false">Follow-ups</button>
+    </div>
+
+    <div role="tabpanel" id="pv-p1" aria-labelledby="pv-t1" class="panel panel-grid">
+      <div class="txt"><h3>One record per patient</h3><p>Everything the doctor and the front desk need, without opening three registers.</p><ul><li>Visits, prescriptions and investigations</li><li>Treatment history across visits</li><li>Invoices and outstanding balance</li><li>The next follow-up, at a glance</li></ul></div>
+      <div class="vis"><div class="app" role="img" aria-label="Sample patient profile for Sita Rai">
+        <div class="pt-head"><span class="avatar">SR</span><div style="flex:1"><h4>Sita Rai</h4><small>34 · Female · Blood group O+ · 98XXXXXXXX</small></div><span class="badge b-ok">Active patient</span></div>
+        <div class="utabs"><span class="on">Overview</span><span>Visits</span><span>Records</span><span>Billing</span><span>Follow-ups</span></div>
+        <div class="kv"><div><small>Last visit</small><b>Root canal, visit 2</b></div><div><small>Outstanding</small><b>NPR 2,500</b></div><div><small>Next follow-up</small><b>24 Oct · Review</b></div></div>
+        <ul class="rows">
+          <li><span class="who">Root canal · visit 2<small>Dr. Adhikari · Treatment</small></span><span class="badge b-bill">Part-paid</span></li>
+          <li><span class="who">Consultation<small>Dr. Adhikari · Prescription added</small></span><span class="badge b-ok">Paid</span></li>
+          <li><span class="who">Cleaning<small>Dr. Sharma · Investigation: X-ray</small></span><span class="badge b-ok">Paid</span></li>
+        </ul></div><p class="sample">Illustrative interface with sample data.</p></div>
+    </div>
+
+    <div role="tabpanel" id="pv-p2" aria-labelledby="pv-t2" class="panel panel-grid">
+      <div class="txt"><h3>Every doctor’s day, one calendar</h3><p>Book against schedules, move appointments and see gaps and no-shows.</p><ul><li>Doctor schedules and calendar views</li><li>Walk-ins alongside booked patients</li><li>Cancellations and no-shows recorded</li></ul></div>
+      <div class="vis"><div class="app scroll" role="img" aria-label="Sample week calendar with appointments for Sunday to Friday">
+        <div class="app-bar"><h4>Week view · Dr. Adhikari</h4><span class="chip-btn ghost">Dr. Sharma</span><span class="chip-btn"><svg class="ic" style="width:14px;height:14px"><use href="#i-plus"/></svg>New</span></div>
+        <div class="cal">
+          <div class="dh"></div><div class="dh">Sun</div><div class="dh">Mon</div><div class="dh">Tue</div><div class="dh">Wed</div><div class="dh">Thu</div><div class="dh">Fri</div>
+          <div class="tm">10:00</div><div><div class="ev b-doc" style="background:var(--doc-bg);color:var(--doc-t)">Ram S.<small>Root canal</small></div></div><div></div><div><div class="ev" style="background:var(--ok-bg);color:var(--green-t)">Anita K.<small>Check-up</small></div></div><div></div><div></div><div></div>
+          <div class="tm">11:00</div><div></div><div><div class="ev" style="background:var(--bill-bg);color:var(--bill-t)">Sita R.<small>Review</small></div></div><div></div><div><div class="ev" style="background:var(--doc-bg);color:var(--doc-t)">Hari T.<small>Scaling</small></div></div><div></div><div></div>
+          <div class="tm">12:00</div><div><div class="ev" style="background:var(--wait-bg);color:var(--wait-t)">Walk-in<small>Pain</small></div></div><div></div><div></div><div></div><div><div class="ev" style="background:var(--err-bg);color:var(--err-t)">No-show<small>Maya G.</small></div></div><div></div>
+          <div class="tm">13:00</div><div></div><div></div><div><div class="ev" style="background:var(--doc-bg);color:var(--doc-t)">Bimal P.<small>Filling</small></div></div><div></div><div></div><div><div class="ev" style="background:var(--ok-bg);color:var(--green-t)">Sunita L.<small>Check-up</small></div></div>
+        </div></div><p class="sample">Illustrative interface with sample data. Clinic days and hours are configurable.</p></div>
+    </div>
+
+    <div role="tabpanel" id="pv-p3" aria-labelledby="pv-t3" class="panel panel-grid">
+      <div class="txt"><h3>A queue everyone can see</h3><p>Reception checks patients in, the doctor sees who is next, billing sees who is finishing.</p><ul><li>Token-based queue per clinic or doctor</li><li>Status shown as a badge plus text</li><li>Average wait and patients seen today</li></ul></div>
+      <div class="vis"><div class="app" role="img" aria-label="Sample queue board with Waiting, With doctor, Billing and Done columns">
+        <div class="app-bar"><h4>Queue · Dental</h4><span class="chip-btn"><svg class="ic" style="width:14px;height:14px"><use href="#i-plus"/></svg>Check in</span></div>
+        <div class="board">
+          <div class="col"><h5>Waiting <span>2</span></h5><div class="tk"><b>#15</b> Bimal P.<small>Filling · 3m</small></div><div class="tk"><b>#14</b> Sita Rai<small>Cleaning · 6m</small></div></div>
+          <div class="col"><h5>With doctor <span>1</span></h5><div class="tk"><b>#13</b> Ram Shrestha<small>Root canal · Dr. Adhikari</small></div></div>
+          <div class="col"><h5>Billing <span>1</span></h5><div class="tk"><b>#12</b> Anita K.C.<small>Check-up · NPR 500</small></div></div>
+          <div class="col"><h5>Done <span>2</span></h5><div class="tk"><b>#11</b> Hari T.<small>Next visit booked</small></div><div class="tk"><b>#10</b> Maya G.<small>Follow-up set</small></div></div>
+        </div></div><p class="sample">Illustrative interface with sample data.</p></div>
+    </div>
+
+    <div role="tabpanel" id="pv-p4" aria-labelledby="pv-t4" class="panel panel-grid">
+      <div class="txt"><h3>Know what’s owed and what’s earned</h3><p>Invoices from your service catalogue, partial payments tracked, and owner-level financial summaries.</p><ul><li>Invoices and payments per visit</li><li>Outstanding balances kept visible</li><li>Revenue, expenses and profit-and-loss</li></ul></div>
+      <div class="vis"><div class="app" role="img" aria-label="Sample invoice with a part payment and a weekly revenue and expense chart">
+        <div class="app-bar"><h4>Billing</h4><span class="badge b-bill">Part-paid</span></div>
+        <div class="bill">
+          <div><b style="font-family:var(--head)">Invoice #0142 · Sita Rai</b>
+            <div class="line"><span>Consultation</span><span>NPR 500</span></div>
+            <div class="line"><span>Root canal · visit 2</span><span>NPR 6,000</span></div>
+            <div class="line tot"><span>Total</span><span>NPR 6,500</span></div>
+            <div class="line"><span>Paid · cash</span><span>NPR 4,000</span></div>
+            <div class="line due"><span>Balance due</span><span>NPR 2,500</span></div></div>
+          <div><div class="mini"><div><small>Revenue (month)</small><b>NPR 4.2L</b></div><div><small>Outstanding</small><b>NPR 38,500</b></div></div>
+            <div class="bars" role="img" aria-label="Weekly revenue and expenses, revenue higher each week"><div><i class="rv" style="height:55%"></i><i class="ex" style="height:30%"></i></div><div><i class="rv" style="height:70%"></i><i class="ex" style="height:34%"></i></div><div><i class="rv" style="height:62%"></i><i class="ex" style="height:36%"></i></div><div><i class="rv" style="height:88%"></i><i class="ex" style="height:40%"></i></div></div>
+            <div class="legend"><span>Revenue</span><span>Expenses</span></div></div>
+        </div></div><p class="sample">Illustrative interface with sample data.</p></div>
+    </div>
+
+    <div role="tabpanel" id="pv-p5" aria-labelledby="pv-t5" class="panel panel-grid">
+      <div class="txt"><h3>No patient falls through the gap</h3><p>See who is due to return, who missed an appointment, and what your team still has to do.</p><ul><li>Due, overdue and rebooked at a glance</li><li>Messages prepared from your templates</li><li>Staff task list with completion tracking</li></ul></div>
+      <div class="vis"><div class="app" role="img" aria-label="Sample follow-up task list with due and overdue patients">
+        <div class="app-bar"><h4>Follow-ups</h4><span class="chip-btn ghost">Today</span></div>
+        <div class="stats"><div><b>5</b><span>Due today</span></div><div><b>3</b><span>Overdue</span></div><div><b>7</b><span>Rebooked this week</span></div></div>
+        <ul class="rows">
+          <li><span class="who">Sita Rai<small>Root canal review · due 24 Oct</small></span><span class="badge b-wait">Due today</span></li>
+          <li><span class="who">Maya G.<small>Missed appointment · 2 days ago</small></span><span class="badge b-err">Overdue</span></li>
+          <li><span class="who">Hari T.<small>Scaling recall · 6 months</small></span><span class="badge b-doc">Message ready</span></li>
+          <li><span class="who">Sunita L.<small>Package expires in 7 days</small></span><span class="badge b-ok">Rebooked</span></li>
+        </ul></div><p class="sample">Illustrative interface with sample data.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. SPECIALTIES -->
+<section class="sec" id="solutions">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Solutions</p>
+      <h2>One common core. Configured for your specialty.</h2>
+      <p class="lede">Every clinic shares the same foundation: patients, visits, billing, staff. On top of that, each specialty has its own rhythm. Cliniyo is built to grow from the shared core into specialty modules.</p>
+    </div>
+    <div class="grid g4">
+      <article class="card spec"><span class="ic-box"><svg class="ic"><use href="#i-layers"/></svg></span><h3>Dental clinics</h3><p>Treatments that run across several visits, and regular recalls.</p><ul><li>Multi-visit treatment plans</li><li>Recall and rebooking follow-ups</li><li>Part-payments across a treatment</li></ul></article>
+      <article class="card spec"><span class="ic-box"><svg class="ic"><use href="#i-eye"/></svg></span><h3>Dermatology &amp; skin</h3><p>Repeat visits and treatment courses that need to be completed.</p><ul><li>Treatment history per patient</li><li>Reminders for the next session</li><li>Prescriptions and investigations</li></ul></article>
+      <article class="card spec"><span class="ic-box"><svg class="ic"><use href="#i-spark"/></svg></span><h3>Hair &amp; aesthetics</h3><p>Packages, memberships and sessions that repeat on a schedule.</p><ul><li>Packages and memberships</li><li>Expiry alerts for patients and staff</li><li>Inventory linked to treatments</li></ul></article>
+      <article class="card spec"><span class="ic-box"><svg class="ic"><use href="#i-building"/></svg></span><h3>Multi-specialty clinics</h3><p>Several doctors, departments or branches under one owner.</p><ul><li>Doctor-wise schedules and queues</li><li>Branches and staff transfers</li><li>Role-based access for each team</li></ul></article>
+    </div>
+    <div class="callout"><svg class="ic"><use href="#i-info"/></svg><p>Don’t see your specialty? The core works for general clinics today. Tell us how your clinic works when you book a demo and we’ll show you how it would be set up.</p></div>
+  </div>
+</section>
+
+<!-- 8. RETENTION -->
+<section class="sec alt" id="retention">
+  <div class="wrap ret">
+    <div>
+      <p class="eyebrow">What makes Cliniyo different</p>
+      <h2>Connect clinic operations to patient retention.</h2>
+      <p class="lede">Most tools stop at the invoice. Cliniyo keeps going: when a treatment ends, the clinic records when the patient should return, sees it when it’s due, and tracks whether they came back.</p>
+      <div class="owner-tiles" aria-label="What owners can see">
+        <div class="tile"><small>Missed follow-ups</small><b>3</b></div>
+        <div class="tile"><small>Pending staff tasks</small><b>11</b></div>
+        <div class="tile"><small>Rebooking opportunities</small><b>9</b></div>
+        <div class="tile"><small>Follow-up completion</small><b>72%</b></div>
+      </div>
+      <p class="sample">Illustrative owner view with sample data.</p>
+      <p class="dep">Message sending depends on the channels you set up, your clinic’s configuration, each patient’s preferences and applicable privacy requirements. Channel availability is shown in the <a href="#pricing">plans</a>.</p>
+    </div>
+    <ol class="steps">
+      <li><b>Treatment is completed</b><p>The doctor records what was done and when the patient should return.</p></li>
+      <li><b>The return date is saved</b><p>It becomes a follow-up on the patient’s record and on your team’s task list.</p></li>
+      <li><b>It shows up when it’s due</b><p>Reception sees who to contact today, who is overdue, and who missed an appointment.</p></li>
+      <li><b>A message is prepared</b><p>From your own templates, with timing and patient groups you configure.</p></li>
+      <li><b>You track the result</b><p>See whether the patient rebooked and returned, and how many follow-ups your team completes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 9. ROLES -->
+<section class="sec" id="roles">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Role-based views</p>
+      <h2>Everyone sees what they need. Nothing more.</h2>
+      <p class="lede">Each role gets a task-focused dashboard. Permissions control who can see sensitive information such as finances and payroll.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Role views" data-tabs="rl">
+      <button class="tab" role="tab" id="rl-t1" aria-controls="rl-p1" aria-selected="true">Owner</button>
+      <button class="tab" role="tab" id="rl-t2" aria-controls="rl-p2" aria-selected="false">Reception</button>
+      <button class="tab" role="tab" id="rl-t3" aria-controls="rl-p3" aria-selected="false">Doctor</button>
+      <button class="tab" role="tab" id="rl-t4" aria-controls="rl-p4" aria-selected="false">Branch manager</button>
+      <button class="tab" role="tab" id="rl-t5" aria-controls="rl-p5" aria-selected="false">Finance</button>
+    </div>
+    <div role="tabpanel" id="rl-p1" aria-labelledby="rl-t1" class="panel panel-grid"><div class="txt"><h3>Owner dashboard</h3><p>The whole business, without asking anyone for a report.</p></div><div class="rolegrid"><div class="tile"><small>Revenue</small><b>Month to date</b></div><div class="tile"><small>Expenses</small><b>By category</b></div><div class="tile"><small>Retention</small><b>Returning patients</b></div><div class="tile"><small>Outstanding</small><b>Payments still owed</b></div></div></div>
+    <div role="tabpanel" id="rl-p2" aria-labelledby="rl-t2" class="panel panel-grid"><div class="txt"><h3>Reception dashboard</h3><p>Built for a busy front desk: register, book, check in, bill.</p></div><div class="rolegrid"><div class="tile"><small>Registration</small><b>New &amp; returning</b></div><div class="tile"><small>Appointments &amp; queue</small><b>Today’s list</b></div><div class="tile"><small>Billing</small><b>Open invoices</b></div><div class="tile"><small>Follow-ups</small><b>Who to call</b></div></div></div>
+    <div role="tabpanel" id="rl-p3" aria-labelledby="rl-t3" class="panel panel-grid"><div class="txt"><h3>Doctor dashboard</h3><p>Today’s patients and their history, with no admin in the way.</p></div><div class="rolegrid"><div class="tile"><small>Schedule</small><b>Today’s patients</b></div><div class="tile"><small>Patient history</small><b>Past visits</b></div><div class="tile"><small>Consultation &amp; treatment</small><b>In progress</b></div><div class="tile"><small>Follow-ups</small><b>Return needed</b></div></div></div>
+    <div role="tabpanel" id="rl-p4" aria-labelledby="rl-t4" class="panel panel-grid"><div class="txt"><h3>Branch manager dashboard</h3><p>Run one branch day to day, with the reports to back it up.</p></div><div class="rolegrid"><div class="tile"><small>Staff</small><b>On shift today</b></div><div class="tile"><small>Schedules</small><b>Doctors &amp; rooms</b></div><div class="tile"><small>Operations</small><b>Branch activity</b></div><div class="tile"><small>Reporting</small><b>Branch results</b></div></div></div>
+    <div role="tabpanel" id="rl-p5" aria-labelledby="rl-t5" class="panel panel-grid"><div class="txt"><h3>Finance dashboard</h3><p>Money in, money out, and what’s still pending.</p></div><div class="rolegrid"><div class="tile"><small>Invoices</small><b>Issued &amp; open</b></div><div class="tile"><small>Payments</small><b>Received</b></div><div class="tile"><small>Expenses</small><b>Recorded</b></div><div class="tile"><small>Reports</small><b>Profit &amp; loss</b></div></div></div>
+  </div>
+</section>
+
+<!-- 10. PRICING -->
+<section class="sec alt" id="pricing">
+  <div class="wrap">
+    <div class="head center">
+      <p class="eyebrow">Pricing</p>
+      <h2>Simple annual pricing in NPR.</h2>
+      <p class="lede">Pick the plan that matches your branches and team. Each plan includes everything in the one before it.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card price">
+        <h3>Starter</h3>
+        <div class="amt">NPR 9,990<small> / year</small></div>
+        <p class="for">One clinic getting organized.</p>
+        <div class="limits"><div><b>1</b><span>branch</span></div><div><b>5</b><span>staff</span></div><div><b>3</b><span>user accounts</span></div></div>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Patient management</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Appointments</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Billing and invoices</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Service catalogue</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Inventory</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="#demo" data-plan="Starter">Book a Demo</a>
+      </article>
+      <article class="card price feat">
+        <span class="tag">Adds messaging</span>
+        <h3>Growth</h3>
+        <div class="amt">NPR 14,990<small> / year</small></div>
+        <p class="for">Growing clinics that want to reach patients.</p>
+        <div class="limits"><div><b>2</b><span>branches</span></div><div><b>15</b><span>staff</span></div><div><b>6</b><span>user accounts</span></div></div>
+        <ul>
+          <li class="inherit"><svg class="ic"><use href="#i-check"/></svg>Everything in Starter</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>One WhatsApp number</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>SMS features</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Memberships and packages</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Appointment, payment and low-stock alerts</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Google review requests</li>
+        </ul>
+        <a class="btn btn-primary btn-block" href="#demo" data-plan="Growth">Book a Demo</a>
+      </article>
+      <article class="card price">
+        <h3>Scale</h3>
+        <div class="amt">NPR 24,990<small> / year</small></div>
+        <p class="for">Multi-branch clinics with larger teams.</p>
+        <div class="limits"><div><b>5</b><span>branches</span></div><div><b>40</b><span>staff</span></div><div><b>15</b><span>user accounts</span></div></div>
+        <ul>
+          <li class="inherit"><svg class="ic"><use href="#i-check"/></svg>Everything in Growth</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Email and additional communication capabilities</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Attendance and payroll</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Enhanced follow-up features</li>
+          <li><svg class="ic" style="color:var(--muted)"><use href="#i-spark"/></svg>AI-powered administrative features <span class="badge b-plan">Planned</span></li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="#demo" data-plan="Scale">Book a Demo</a>
+      </article>
+    </div>
+
+    <details class="cmp" open>
+      <summary>Compare plans side by side</summary>
+      <div class="tbl-wrap"><table>
+        <caption class="sr" style="position:absolute;left:-9999px">Plan comparison</caption>
+        <thead><tr><th scope="col">Feature</th><th scope="col">Starter</th><th scope="col">Growth</th><th scope="col">Scale</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" style="font-weight:500">Branches</th><td>1</td><td>2</td><td>5</td></tr>
+          <tr><th scope="row" style="font-weight:500">Staff</th><td>Up to 5</td><td>Up to 15</td><td>Up to 40</td></tr>
+          <tr><th scope="row" style="font-weight:500">User accounts</th><td>3</td><td>6</td><td>15</td></tr>
+          <tr><th scope="row" style="font-weight:500">Patients, appointments, billing, service catalogue, inventory</th><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">One WhatsApp number, SMS features</th><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">Memberships and packages</th><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">Appointment, payment and low-stock alerts</th><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">Google review requests</th><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">Email and additional communication</th><td class="dash" aria-label="Not included">—</td><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">Attendance and payroll</th><td class="dash" aria-label="Not included">—</td><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">Enhanced follow-up features</th><td class="dash" aria-label="Not included">—</td><td class="dash" aria-label="Not included">—</td><td><svg class="ic" role="img" aria-label="Included"><use href="#i-check"/></svg></td></tr>
+          <tr><th scope="row" style="font-weight:500">AI-powered administrative features</th><td class="dash" aria-label="Not included">—</td><td class="dash" aria-label="Not included">—</td><td><span class="badge b-plan">Planned</span></td></tr>
+        </tbody></table></div>
+    </details>
+
+    <div class="price-notes">
+      <p><b>Planned</b> means the feature is on our roadmap and is not available yet. AI features are limited to administrative tasks and workflow assistance. Cliniyo does not offer AI diagnosis.</p>
+      <p>Messaging features (WhatsApp, SMS, email, Google review requests) depend on your channel setup and the providers involved. Local payment providers such as eSewa and Khalti are under consideration and are not currently available. We’ll confirm exactly what is live for your clinic during your demo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11. SECURITY -->
+<section class="sec" id="security">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Security &amp; trust</p>
+      <h2>Patient data deserves careful handling.</h2>
+      <p class="lede">Clinic records are private. Cliniyo is designed around controlling who can see what.</p>
+    </div>
+    <div class="grid g3">
+      <article class="sec-item"><span class="ic-box"><svg class="ic"><use href="#i-lock"/></svg></span><h3>Role-based access</h3><p>Reception, doctors, managers and finance each get only the screens and data their role needs.</p></article>
+      <article class="sec-item"><span class="ic-box"><svg class="ic"><use href="#i-building"/></svg></span><h3>Branch-aware permissions</h3><p>Staff are allocated to branches, so a team sees its own branch’s work.</p></article>
+      <article class="sec-item"><span class="ic-box"><svg class="ic"><use href="#i-list"/></svg></span><h3>Activity log</h3><p>Know who did what in the system, so changes to records can be traced.</p></article>
+    </div>
+    <div class="honest"><b>What we don’t claim.</b> Cliniyo does not currently hold any security or compliance certifications, and we won’t imply otherwise. If you’d like to know how data is hosted, backed up and protected, ask us during your demo and we’ll answer in writing.</div>
+  </div>
+</section>
+
+<!-- 12. FAQ -->
+<section class="sec alt" id="faq">
+  <div class="wrap">
+    <div class="head center"><p class="eyebrow">FAQ</p><h2>Questions clinic owners ask.</h2></div>
+    <div class="faq">
+      <details><summary>Who is Cliniyo for?</summary><div class="ans">Private clinics in Nepal, starting with dental, dermatology and skin, hair and aesthetic, general and small multi-specialty clinics. It’s designed for owners, doctors, receptionists, managers and finance staff, including people who are not technical.</div></details>
+      <details><summary>Is Cliniyo only for dental clinics?</summary><div class="ans">No. The core (patients, appointments, queue, consultation, treatment, billing, staff and follow-ups) works for any clinic. Specialty workflows are built as modules on top of that core.</div></details>
+      <details><summary>What’s the difference between a session and a consultation?</summary><div class="ans">A session is the whole coordinated visit between reception, the doctor and other staff involved. The consultation is the doctor’s part within it.</div></details>
+      <details><summary>Does Cliniyo send WhatsApp and SMS messages automatically?</summary><div class="ans">Messaging is available on the plans that include it, and depends on your channel setup, your clinic’s configuration, each patient’s preferences and applicable privacy requirements. Cliniyo prepares follow-up messages from your templates; we’ll show you exactly what is live for your clinic in the demo.</div></details>
+      <details><summary>Does it work with eSewa or Khalti?</summary><div class="ans">Not yet. Local payment providers are under consideration. We won’t list an integration as available until it has been built and tested.</div></details>
+      <details><summary>Will AI diagnose patients?</summary><div class="ans">No. Planned AI features on the Scale plan are limited to administrative tasks and workflow assistance. They are not available yet.</div></details>
+      <details><summary>Can I limit what each staff member can see?</summary><div class="ans">Yes. Access is role-based, so sensitive information such as finances and payroll is only visible to people with the right permissions.</div></details>
+      <details><summary>Can I run more than one branch?</summary><div class="ans">Yes. Growth supports 2 branches and Scale supports 5, with branch allocation and staff transfers.</div></details>
+      <details><summary>Is there a free trial?</summary><div class="ans">Choose “Demo and trial” on the request form and tell us about your clinic. We’ll confirm what’s available for you.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13. FINAL CTA / FORM -->
+<section class="sec dark" id="demo">
+  <div class="wrap demo">
+    <div>
+      <p class="eyebrow">Book a demo</p>
+      <h2>Your clinic, in flow.</h2>
+      <p class="lede">Tell us about your clinic. We’ll show you Cliniyo set up around how you work, and answer questions about plans, messaging and data.</p>
+      <ul class="pts" style="margin-top:24px">
+        <li><svg class="ic"><use href="#i-check"/></svg>See the screens your reception and doctors would use</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Walk through your own patient journey, start to follow-up</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Get clear answers on what is live and what is planned</li>
+      </ul>
+    </div>
+    <form class="form" id="demoForm" novalidate>
+      <h3>Request a demo</h3>
+      <p class="hint">Takes about a minute. Fields marked * are required.</p>
+      <div class="frow">
+        <div class="fld"><label for="f-name">Your name *</label><input id="f-name" name="name" autocomplete="name" required><p class="err" id="e-name">Please enter your name.</p></div>
+        <div class="fld"><label for="f-clinic">Clinic name *</label><input id="f-clinic" name="clinic" autocomplete="organization" required><p class="err" id="e-clinic">Please enter your clinic’s name.</p></div>
+      </div>
+      <div class="frow">
+        <div class="fld"><label for="f-phone">Phone or WhatsApp *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><p class="err" id="e-phone">Please enter a valid phone number.</p></div>
+        <div class="fld"><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email"><p class="err" id="e-email">Please enter a valid email address.</p></div>
+      </div>
+      <div class="frow">
+        <div class="fld"><label for="f-type">Clinic type *</label><select id="f-type" name="type" required><option value="">Select…</option><option>Dental</option><option>Dermatology / skin</option><option>Hair &amp; aesthetics</option><option>General clinic</option><option>Multi-specialty</option><option>Other</option></select><p class="err" id="e-type">Please choose a clinic type.</p></div>
+        <div class="fld"><label for="f-branches">Branches</label><select id="f-branches" name="branches"><option>1</option><option>2</option><option>3–5</option><option>More than 5</option></select></div>
+      </div>
+      <div class="fld"><label for="f-want">I’d like</label><select id="f-want" name="want"><option>A demo</option><option>Demo and trial</option></select></div>
+      <div class="fld"><label for="f-msg">Anything we should know? <span class="opt">(optional)</span></label><textarea id="f-msg" name="msg"></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Leave blank<input tabindex="-1" autocomplete="off" name="website" id="f-hp"></label></div>
+      <div class="chk" id="c-consent"><input type="checkbox" id="f-consent" required><label for="f-consent">I agree that Cliniyo may contact me about this request. See the <a href="privacy.html">Privacy Policy</a>.</label></div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Prepare my request <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <div class="status" id="formStatus" role="status" aria-live="polite" tabindex="-1"></div>
+      <p class="proto">This form does not store your details on a server. It opens your email app with your request filled in, ready to send to <span id="mailShow">our team</span>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- 14. FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top" aria-label="Cliniyo home"><svg aria-hidden="true"><use href="#logo"/></svg><span>Cliniyo</span></a>
+        <p class="tagline">The Operating System for Modern Clinics. Started in Nepal.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="#product">Modules</a></li><li><a href="#workflow">Workflow</a></li><li><a href="#preview">Screens</a></li><li><a href="#retention">Retention</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#solutions">Solutions</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#security">Security</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:hello@cliniyo.com">hello@cliniyo.com</a></li><li>Kathmandu, Nepal</li><li><a href="#demo">Book a Demo</a></li></ul></div>
+    </div>
+    <div class="base"><span>© <span id="yr">2026</span> Cliniyo. All rights reserved.</span><span><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a></span></div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
